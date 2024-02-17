@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Testscript.VerifyLoginFuncationalitywithInValidpassword"/>
+      <class name="Testscript.VerifyThe_addtocartfunctionality"/>
+      <class name="Testscript.VerifySearchingfuncationalityTest"/>
+      <class name="Testscript.VerifyLoginFuncationalityEmptyemailpassword"/>
+      <class name="Testscript.VerifyLoginFunctionalitywithValidDetails"/>
+      <class name="Testscript.Verify_registeration_functionality"/>
+      <class name="Testscript.VerifyThewishlistFunctionality"/>
+      <class name="Testscript.VerifyLoginFuncationalitywithemptypassword"/>
+      <class name="Testscript.VerifyLoginFuncationalitywithInValidemail"/>
+      <class name="Testscript.VerifyLoginFunctionalitywithemptyemail"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
