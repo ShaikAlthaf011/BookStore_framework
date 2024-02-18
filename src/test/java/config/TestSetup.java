@@ -76,7 +76,7 @@ public void teardown(ITestResult results) {
 		Markup m=MarkupHelper.createLabel(logtext, ExtentColor.GREY);
 		ExtentFactory.getInstance().getExtent().skip(m);
 	}
-	if( DriverFactory.getInstance().getDriver()!=null) {
+	if(DriverFactory.getInstance().getDriver()!=null) {
 		DriverFactory.getInstance().closeBrowser();
 	}
 	extent.flush();
