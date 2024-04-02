@@ -1,5 +1,6 @@
 package config;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
@@ -44,7 +45,10 @@ public void open_suite() {
             (1900 + d.getYear()) + "_" + 
             (d.getHours() < 10 ? "0" + d.getHours() : d.getHours()) + "_" + 
             (d.getSeconds() < 10 ? "0" + d.getSeconds() : d.getSeconds());
-        htmlreporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/reports/"+reportName+".html");
+	         String folderName=d.getYear()+"_"+d.getMonth()+" "+d.getDay();
+	     File f= new File(System.getProperty("user.dir")+"/reports/"+folderName);  
+	     f.mkdir();
+        htmlreporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/reports/"+folderName+"/"+reportName+".html");
 		htmlreporter.config().setEncoding("utf-8");
 		htmlreporter.config().setTheme(Theme.STANDARD);
 		htmlreporter.config().setReportName("Automation test results");
