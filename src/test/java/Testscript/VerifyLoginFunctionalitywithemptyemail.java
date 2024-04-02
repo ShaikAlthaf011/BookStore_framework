@@ -4,8 +4,8 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import helper.BussinessComponent;
-import helper.DataProviders;
+import Reusablecomponent.BussinessComponent;
+import Reusablecomponent.DataProviders;
 
 public class VerifyLoginFunctionalitywithemptyemail  extends BussinessComponent{
 

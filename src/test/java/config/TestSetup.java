@@ -28,9 +28,9 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class TestSetup {
-	public static WebDriver driver;
-	public static JavascriptExecutor js;
-	public static TakesScreenshot ts;
+	 public static WebDriver driver;
+	 public static JavascriptExecutor js;
+	 public static TakesScreenshot ts;
 	 public static Properties ps;
 	 public  static ExtentSparkReporter htmlreporter;
 	 public static ExtentReports extent;
@@ -44,7 +44,7 @@ public void open_suite() {
             (1900 + d.getYear()) + "_" + 
             (d.getHours() < 10 ? "0" + d.getHours() : d.getHours()) + "_" + 
             (d.getSeconds() < 10 ? "0" + d.getSeconds() : d.getSeconds());
-    htmlreporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/reports/"+reportName+".html");
+        htmlreporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/reports/"+reportName+".html");
 		htmlreporter.config().setEncoding("utf-8");
 		htmlreporter.config().setTheme(Theme.STANDARD);
 		htmlreporter.config().setReportName("Automation test results");

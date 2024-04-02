@@ -1,4 +1,4 @@
-package helper;
+package Reusablecomponent;
 
 import java.io.IOException;
 import java.util.Random;
@@ -55,7 +55,6 @@ public class BussinessComponent extends TechnicalComponents {
 		ExtentFactory.getInstance().getExtent().log(Status.PASS,MediaEntityBuilder.createScreenCaptureFromPath(TechnicalComponents.takescreenshot())
 				.build());
 	 }
-	 
 	 private static final String CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 	    private static final Random RANDOM = new Random();
 
@@ -68,6 +67,7 @@ public class BussinessComponent extends TechnicalComponents {
 	        }
 	        return stringBuilder.toString();
 	    }
+
 
 	 
 	public void perfrom_registertion() throws EncryptedDocumentException, InvalidFormatException {

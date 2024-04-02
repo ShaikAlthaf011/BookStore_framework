@@ -6,8 +6,8 @@ import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.annotations.Test;
 
-import helper.BussinessComponent;
-import helper.Excelutility;
+import Reusablecomponent.BussinessComponent;
+import Reusablecomponent.Excelutility;
 
 public class Verify_registeration_functionality  extends BussinessComponent{
 

@@ -1,4 +1,4 @@
-package helper;
+package Reusablecomponent;
 
 import java.io.File;
 import java.time.Duration;
@@ -22,7 +22,7 @@ import config.TestSetup;
 
 public class TechnicalComponents extends TestSetup {
 	   public static WebDriver localdriver;
-	public  static void  navigateUrl(String url){
+	    public  static void  navigateUrl(String url){
 		 try{
 			 localdriver= DriverFactory.getInstance().getDriver();
 			 localdriver.get(url);

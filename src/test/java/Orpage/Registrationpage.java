@@ -8,8 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 
+import Reusablecomponent.TechnicalComponents;
 import config.ExtentFactory;
-import helper.TechnicalComponents;
 
 public class Registrationpage extends TechnicalComponents{
 	
